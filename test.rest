@@ -1,0 +1,42 @@
+###
+POST http://localhost:5000/user/register/
+Content-Type: application/json
+
+{
+    "username": "chetan3327",
+    "password": "123",
+    "email": "test@gmail.com"
+}
+
+###
+POST http://localhost:5000/user/login/
+content-type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "123"
+}
+
+
+###
+POST http://localhost:5000/user/dashboard
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU4ZWEwNjc5OGUxZmU5ZDc5ZjdhNjQiLCJpYXQiOjE3MDAzMjY0NjJ9.Q6yjWjhIxKGhN-c9LGWYaoG5JPL-h9W-FVVCqx31ooI
+
+###
+POST http://localhost:5000/user/forgot-password
+Content-Type: application/json
+
+{
+    "email": "chauhanchetan12789@gmail.com",
+    "password": "password123"
+}
+
+###
+GET http://localhost:5000/user/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU5YjdmZTcxMjg2M2M0ZTg2NWYwMmQiLCJpYXQiOjE3MDAzNzkzNDEsImV4cCI6MTcwMDM4Mjk0MX0.ocZP7EXuYP8a2ehOhZrYdywoJtn3LLy-yDarTg8Dbjg/password123
+Content-Type: application/json
+
+###
+GET http://localhost:5000/user/6559b7fe712863c4e865f02d
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTU4ZWEwNjc5OGUxZmU5ZDc5ZjdhNjQiLCJpYXQiOjE3MDAzMjY0NjJ9.Q6yjWjhIxKGhN-c9LGWYaoG5JPL-h9W-FVVCqx31ooI
